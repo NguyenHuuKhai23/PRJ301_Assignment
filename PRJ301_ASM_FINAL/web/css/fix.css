@@ -1,0 +1,176 @@
+@media (max-width: 520px){
+    .option_club{
+        display: block;
+        text-align: end;
+    }
+}
+.badge.bg-danger.rounded-circle {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .badge.bg-danger.rounded-circle {
+        right: 15px; /* Dịch sang trái hơn khi màn hình nhỏ */
+    }
+}
+
+.image-container {
+    width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+    height: 170px; /* Chiều cao cố định của container, bạn có thể điều chỉnh */
+    overflow: hidden; /* Ẩn phần ảnh thừa */
+    display: flex;
+    justify-content: center; /* Căn giữa ảnh theo chiều ngang */
+    align-items: flex-start; /* Căn trên cùng thay vì giữa theo chiều dọc */
+}
+
+.cropped-image {
+    width: 100%; /* Đảm bảo ảnh lấp đầy container */
+    height: auto; /* Giữ tỷ lệ gốc của ảnh */
+    object-fit: cover; /* Cắt ảnh để lấp đầy khu vực */
+    object-position: top; /* Chỉ lấy phần trên của ảnh */
+}
+
+.product__details__rating .fa-star {
+    color: #ccc; /* Màu mặc định cho sao chưa chọn */
+    cursor: pointer;
+    font-size: 20px;
+}
+.product__details__rating .fa-star.checked {
+    color: #f5c518;
+}
+
+.fa-star {
+    color: #ccc;
+}
+.fa-star.rated {
+    color: #f5c518;
+}
+
+
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #757575; /* Màu xám tối khi ô chat đóng */
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.chat-button.active {
+    background-color: #007bff; /* Màu xanh sáng khi ô chat mở */
+}
+
+.chat-button:hover {
+    background-color: #007bff; /* Màu xanh khi hover */
+}
+
+.chat-button.active:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover trong trạng thái active */
+}
+
+/* Khi hover */
+.chat-button:hover {
+    background-color: #007bff; /* Màu xanh khi hover */
+}
+
+/* Khi active (đang nhấn) */
+.chat-button:active {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi nhấn */
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+    width: 300px; /* Tăng từ 250px lên 300px */
+    height: 350px; /* Tăng từ 300px lên 350px */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.chat-header {
+    background-color: #009cff;
+    color: orangered;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    padding: 10px;
+    padding-bottom: 15px; /* Tăng padding dưới để nút thấp hơn */
+    border-top: 1px solid #eee;
+    display: flex; /* Sử dụng flex để xếp ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Tăng khoảng cách giữa input và nút play */
+}
+
+.chat-input input {
+    flex: 1; /* Input chiếm toàn bộ không gian còn lại */
+    padding: 8px; /* Tăng padding để input cao hơn một chút */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.send-icon:hover {
+    color: #0056b3; /* Màu đậm hơn khi hover */
+}
+.send-icon {
+    font-size: 24px;
+    padding: 5px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    transform: rotate(45deg); /* Xoay để trông như bay lên */
+}
+
+.chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex; /* Dùng flex để quản lý tin nhắn */
+    flex-direction: column; /* Tin nhắn xếp theo cột */
+}
+
+.col-sm-12.col-xl-8 {
+    margin-bottom: 10px; /* Khoảng cách giữa các tin nhắn */
+}
+
+.message-right {
+    margin-left: auto; /* Đẩy sang phải */
+    margin-bottom: 10px; /* Khoảng cách giữa các tin nhắn */
+}
+
+/* Đảm bảo p trong div không có margin thừa */
+.bg-light p {
+    margin: 0; /* Loại bỏ margin mặc định của p */
+}
+
+
